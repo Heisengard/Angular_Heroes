@@ -6,7 +6,7 @@ import { environments } from 'src/environments/environments';
 import { Observable } from 'rxjs/internal/Observable';
 import { Hero } from '../interfaces/hero.interface';
 import { observableToBeFn } from 'rxjs/internal/testing/TestScheduler';
-import { catchError, of } from 'rxjs';
+import { catchError, map, of, throwError } from 'rxjs';
 
 
 @Injectable({providedIn: 'root'})
@@ -36,6 +36,23 @@ export class HeroesService {
   getSuggestions( query: string): Observable<Hero[]> {
     return this.http.get<Hero[]>(`${ this.baseUrl }/heroes?q=${query}&_limit=6`);
 
+  }
+
+  addHero(hero:Hero): Observable<Hero> {
+    return this.http.post<Hero>(`${ this.baseUrl }/heroes`, hero);
+  }
+
+  updateHero(hero:Hero): Observable<Hero> {
+    if (!hero.id) throw Error('Hero id is required');
+    return this.http.patch<Hero>(`${ this.baseUrl }/heroes/${hero.id}`, hero);
+  }
+
+  deleteHeroById(id:string): Observable<boolean> {
+    return this.http.delete(`${ this.baseUrl }/heroes/${id}`)
+    .pipe(
+      catchError( err => of(false)),
+      map( resp => true)
+    );
   }
 
 }
