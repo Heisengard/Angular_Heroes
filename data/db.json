@@ -8,17 +8,8 @@
   ],
   "heroes": [
     {
-      "id": "dc-batman",
-      "superhero": "Batman",
-      "publisher": "DC Comics",
-      "alter_ego": "Bruce Wayne",
-      "first_appearance": "Detective Comics #27",
-      "characters": "Bruce Wayne",
-      "alt_img": null
-    },
-    {
       "id": "dc-superman",
-      "superhero": "Superman",
+      "superhero": "Superman el pepe",
       "publisher": "Marvel Comics",
       "alter_ego": "Kal-El",
       "first_appearance": "Action Comics #1",
@@ -32,14 +23,6 @@
       "alter_ego": "Jay Garrick",
       "first_appearance": "Flash Comics #1",
       "characters": "Jay Garrick, Barry Allen, Wally West, Bart Allen"
-    },
-    {
-      "id": "dc-green",
-      "superhero": "Green Lantern",
-      "publisher": "DC Comics",
-      "alter_ego": "Alan Scott",
-      "first_appearance": "All-American Comics #16",
-      "characters": "Alan Scott, Hal Jordan, Guy Gardner, John Stewart, Kyle Raynor, Jade, Sinestro, Simon Baz"
     },
     {
       "id": "dc-arrow",
@@ -75,11 +58,12 @@
     },
     {
       "id": "dc-blue",
-      "superhero": "Blue Beetle",
+      "superhero": "Blue Beetle Benitez",
       "publisher": "DC Comics",
       "alter_ego": "Dan Garret",
       "first_appearance": "Mystery Men Comics #1",
-      "characters": "Dan Garret, Ted Kord, Jaime Reyes"
+      "characters": "Dan Garret, Ted Kord, Jaime Reyes",
+      "alt_img": null
     },
     {
       "id": "dc-black",
@@ -96,14 +80,6 @@
       "alter_ego": "Peter Parker",
       "first_appearance": "Amazing Fantasy #15",
       "characters": "Peter Parker"
-    },
-    {
-      "id": "marvel-captain",
-      "superhero": "Captain America",
-      "publisher": "Marvel Comics",
-      "alter_ego": "Steve Rogers",
-      "first_appearance": "Captain America Comics #1",
-      "characters": "Steve Rogers"
     },
     {
       "id": "marvel-iron",
@@ -168,15 +144,6 @@
       "alter_ego": "Norrin Radd",
       "first_appearance": "The Fantastic Four #48",
       "characters": "Norrin Radd"
-    },
-    {
-      "id": "jG0RDnD",
-      "superhero": "Richo",
-      "publisher": "Dc Comics",
-      "alter_ego": "perfecto y lindo",
-      "first_appearance": "unicatolica 1014",
-      "characters": "Richo",
-      "alt_img": "https://pm1.aminoapps.com/6609/c5dc0a1edca7dfa26366b87a0b9689a17c31c1b6_00.jpg"
     }
   ]
 }
